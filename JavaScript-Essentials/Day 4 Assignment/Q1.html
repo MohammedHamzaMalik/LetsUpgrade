@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+</head> 
+<body>
+
+    <h1>Image Chaging Buttons!</h1>
+     <br/>
+    <img src='https://images.unsplash.com/photo-1600363330071-696b0db9f485?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60' 
+            height="300px" width="300px" class="imageChange" />
+    <br/> 
+    <button onclick="firstbut()">First Button</button>
+    <button onclick="secondbut()">Second Button</button>
+    <button onclick="thirdbut()">Third Button</button>
+    <script>
+        function firstbut()
+    {
+        const element=document.getElementsByClassName("imageChange");
+        element[0].src ='https://images.unsplash.com/photo-1600363330071-696b0db9f485?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60';
+    }
+
+    function secondbut() {
+        const element = document.getElementsByClassName("imageChange");
+        element[0].src = 'https://images.unsplash.com/photo-1600326145308-d7d5a04f4ce6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60';
+    }
+    function thirdbut() {
+        const element = document.getElementsByClassName("imageChange");
+        element[0].src ="https://images.unsplash.com/photo-1600350909811-8b7e17ec942b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60";
+    }
+    </script>
+</body>
+</html>
