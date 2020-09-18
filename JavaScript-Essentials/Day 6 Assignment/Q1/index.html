@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Day 5-6</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+    
+        }
+    
+        .tablebg {
+            font-family: Cambria,Cochin,serif;
+            margin-top: 5%;
+            height: 10%;
+            width: 70%;
+            margin-left: 15%;
+            margin-right: 15%;
+            padding-bottom: 10%;
+    
+        }
+
+        .tble {
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 0.5%;
+            height: 100%;
+        }
+        h1{
+            margin-top:5%;
+            text-align: center;
+         font-family:sans-serif;
+        }
+
+        td,th{
+            height: 100%;
+            width:0%;
+            text-align: center;
+            padding: 1%;
+        }
+        .ins-data{
+            height: 40%;
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 0.5%;
+            margin-bottom: 2%;
+        }
+       input {
+           padding:0.7%;
+           height: 40%px;
+           width: 100px;
+
+       }
+
+       .ins_btn{
+           height: 60%px;
+           width: 12%;
+           padding: 0.7%;
+
+       }
+       .del_btn{
+           height: 100%px;
+           width: 100%;
+           
+
+       }
+       .searchele {
+           font-family: Cambria,Cochin,serif;
+           margin-left: 10%;
+           height: 40%;
+       }
+
+    </style>
+</head>
+<body>
+    <h1></h1>
+   
+    
+
+
+   
+    <div class='tablebg'>
+        <h1 >Millioners</h1>
+        <div class="ins-data">
+            <form onsubmit="insert(event)">
+                <input required type="text" placeholder="Name" id="ins-name" />
+                <input required type="number" placeholder="Age" id="ins-age" />
+                <input required type="text" placeholder="City" id="ins-city" />
+                <input required type="number" placeholder="salary" id="ins-salary" />
+                
+            </form>
+           
+        </div>
+
+        <div class="searchele">
+            <input type="text" placeholder="search here!" onkeyup="search()" id="searching">
+        </div>
+        <table border="1" class='tble' cellspacing=0>
+         <thead>
+             <tr>
+    
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Salary</th>
+            <th><button class="ins_btn" required type="submit" onclick='delete(event)'>Delete</button></th>
+    
+            </tr>
+         </thead>
+        <tbody id="tablerows">
+            <tr >
+                
+                <td>Bill G.</td>
+                <td>20</td>
+                <td>USA</td>
+                <td>3.5M</td>
+                
+                
+               
+            </tr>
+        </tbody>
+        </table>
+        
+    </div>
+    <script src='Q2.js'></script>
+</body>
+</html>
